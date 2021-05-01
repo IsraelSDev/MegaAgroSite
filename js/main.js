@@ -26,7 +26,7 @@
     Functions Call
 =============================================== */
 
-jQuery(document).ready(function () {
+jQuery(document).ready(function() {
     "use strict";
 
     // here all ready functions
@@ -43,7 +43,7 @@ jQuery(document).ready(function () {
 =============================================== */
 function loader() {
     "use strict";
-    setTimeout(function () {
+    setTimeout(function() {
         $('#loader-wrapper').fadeOut();
     }, 1000);
 };
@@ -58,14 +58,14 @@ function scroll_top() {
         scroll_top_duration = 700,
         $back_to_top = $('.cd-top');
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');
         if ($(this).scrollTop() > offset_opacity) {
             $back_to_top.addClass('cd-fade-out');
         }
     });
 
-    $back_to_top.on('click', function (event) {
+    $back_to_top.on('click', function(event) {
         event.preventDefault();
         $('body,html').animate({
             scrollTop: 0,
@@ -77,7 +77,7 @@ function scroll_top() {
 /* ===============================================
     3. COUNTER
 =============================================== */
-$('.counter').each(function () {
+$('.counter').each(function() {
     var $this = $(this),
         countTo = $this.attr('data-count');
     $({
@@ -89,10 +89,10 @@ $('.counter').each(function () {
         {
             duration: 8000,
             easing: 'linear',
-            step: function () {
+            step: function() {
                 $this.text(Math.floor(this.countNum));
             },
-            complete: function () {
+            complete: function() {
                 $this.text(this.countNum);
                 //alert('finished');
             }
@@ -116,7 +116,7 @@ function magnific_popup() {
             duration: 300, // duration of the effect, in milliseconds
             easing: 'ease-in-out', // CSS transition easing function
 
-            opener: function (openerElement) {
+            opener: function(openerElement) {
 
                 return openerElement.is('img') ? openerElement : openerElement.find('img');
             }
@@ -138,7 +138,7 @@ function video_popup() {
 
     if (items.length > slice) {
         //bind load more event
-        $btnLoadMore.on("click", function (e) {
+        $btnLoadMore.on("click", function(e) {
             e.preventDefault();
             loadMoreNews();
         });
@@ -148,7 +148,7 @@ function video_popup() {
 
     function getItem(listnum) {
         return items
-            .filter(function (index) {
+            .filter(function(index) {
                 if ($(this).attr("data-listnum") == listnum) {
                     return true;
                 }
@@ -200,7 +200,7 @@ function video_popup() {
 /* ===============================================
     6. FILTER GALLERY
 =============================================== */
-$(function () {
+$(function() {
     var $margin = $("#kehl-grid").isotope({
         itemSelector: ".grid-box",
         // Different transition duration
@@ -208,7 +208,7 @@ $(function () {
     });
 
     // on filter button click
-    $(".filter-container li").click(function (e) {
+    $(".filter-container li").click(function(e) {
         var $this = $(this);
 
         // Prevent default behaviour
@@ -229,7 +229,7 @@ $(function () {
 /* ===============================================
     7. MASONRY GALLERY
 =============================================== */
-var $grid = $('.grid').imagesLoaded(function () {
+var $grid = $('.grid').imagesLoaded(function() {
     $grid.masonry({
         itemSelector: '.grid-box',
         percentPosition: true,
@@ -243,7 +243,7 @@ var $grid = $('.grid').imagesLoaded(function () {
 function accordion() {};
 $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
-$('.accordion a').click(function (j) {
+$('.accordion a').click(function(j) {
     var dropDown = $(this).closest('li').find('p');
 
     $(this).closest('.accordion').find('p').not(dropDown).slideUp();
@@ -312,11 +312,11 @@ $('.clients-carousel .owl-carousel').owlCarousel({
         0: {
             items: 2
         },
-        576 : {
+        576: {
             items: 3
         },
-        767 : {
-         items: 4
+        767: {
+            items: 4
         },
         1200: {
             items: 5
@@ -412,9 +412,9 @@ $('.news-carousel-alt .owl-carousel').owlCarousel({
     15. FRONT CAROUSEL
 =============================================== */
 $('.front-carousel .owl-carousel').owlCarousel({
-    autoplay:true,
+    autoplay: true,
     autoplayTimeout: 3000,
-    autoplayHoverPause:true,
+    autoplayHoverPause: true,
     stagePadding: 0,
     loop: true,
     dots: true,
@@ -457,7 +457,7 @@ $('.testimonials-carousel .owl-carousel').owlCarousel({
         0: {
             items: 1
         },
-           600: {
+        600: {
             items: 2
         },
         991: {
@@ -471,9 +471,9 @@ $('.testimonials-carousel .owl-carousel').owlCarousel({
 =============================================== */
 
 $('.solution-carousel .owl-carousel').owlCarousel({
-    autoplay:true,
+    autoplay: true,
     autoplayTimeout: 3500,
-    autoplayHoverPause:false,
+    autoplayHoverPause: false,
     stagePadding: 0,
     loop: true,
     dots: true,
@@ -511,7 +511,7 @@ $('.project-carousel .owl-carousel').owlCarousel({
         0: {
             items: 1
         },
-        767 : {
+        767: {
             items: 2
         },
         1200: {
@@ -525,9 +525,9 @@ $('.project-carousel .owl-carousel').owlCarousel({
     19. FRONT CAROUSEL
 =============================================== */
 $('.testimonial-carousel-alt .owl-carousel').owlCarousel({
-    autoplay:true,
+    autoplay: true,
     autoplayTimeout: 3000,
-    autoplayHoverPause:true,
+    autoplayHoverPause: true,
     stagePadding: 0,
     loop: true,
     dots: true,
@@ -555,9 +555,9 @@ $('.testimonial-carousel-alt .owl-carousel').owlCarousel({
     20. FRONT CAROUSEL
 =============================================== */
 $('.testimonial-carousel-alt-2 .owl-carousel').owlCarousel({
-    autoplay:true,
+    autoplay: true,
     autoplayTimeout: 3000,
-    autoplayHoverPause:true,
+    autoplayHoverPause: true,
     stagePadding: 0,
     loop: true,
     dots: true,
@@ -582,7 +582,7 @@ $('.testimonial-carousel-alt-2 .owl-carousel').owlCarousel({
 /* ===============================================
     5. CLIENTS CAROUSEL
    =============================================== */
-   $('.clients-carousel .owl-carousel').owlCarousel({
+$('.clients-carousel .owl-carousel').owlCarousel({
     stagePadding: 0,
     loop: true,
     dots: true,
@@ -597,11 +597,11 @@ $('.testimonial-carousel-alt-2 .owl-carousel').owlCarousel({
         0: {
             items: 2
         },
-        576 : {
+        576: {
             items: 3
         },
-        767 : {
-         items: 4
+        767: {
+            items: 4
         },
         1200: {
             items: 5
