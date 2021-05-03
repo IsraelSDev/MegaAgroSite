@@ -608,3 +608,13 @@ $('.clients-carousel .owl-carousel').owlCarousel({
         }
     }
 });
+/* ===============================================
+        6. LINKS SOCIAL MEDIAS
+=============================================== */
+
+const link = document.querySelectorAll("#link-social");
+
+$(link).on('click', (e) => {
+    e.preventDefault();
+    return false;
+});
