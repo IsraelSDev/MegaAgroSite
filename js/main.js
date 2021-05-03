@@ -1,27 +1,3 @@
-/* ==================================================
-  * Template: Agros
-  * Version:  2
-  * Date:     April 12 2021
-===================================================== */
-
-/*==================================================*/
-/* [Table of contents] */
-/*==================================================*/
-
-/*	
-    1. PRELOADER
-    2. SCROLL TOP
-    3. COUNTER
-    4. MAGNIFIC POPUP GALLERY
-    5. YOUTUBE POPUP
-    6. FILTER GALLERY
-    7. MASONRY GALLERY
-    8. FAQ ACCORDION
-    9. ANIMATION
-    10. VIDEO POPUP
-    11. SLIDER
-*/
-
 /* ===============================================
     Functions Call
 =============================================== */

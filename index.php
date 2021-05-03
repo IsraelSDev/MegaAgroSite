@@ -1,5 +1,7 @@
+    
+<!--ISRAEL SOARES - ISSTUDIO.COM.BR / 13:55 / 03-05-2021-->
 
-    <?php
+	<?php
 
 	if(isset($_GET['url'])){
 		if(file_exists($_GET['url']).'.html'){
@@ -12,3 +14,5 @@
 	}
 ?>
 
+
+<!--ISRAEL SOARES - ISSTUDIO.COM.BR / 13:55 / 03-05-2021-->
